@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineHeart,AiOutlineComment,AiOutlineShareAlt,AiOutlineSave} from 'react-icons/ai'
-import {FaRegComment} from 'react-icons/fa'
+import {HiOutlineEmojiHappy} from 'react-icons/hi'
 export default function Upload_card() {
   return (
     <div class=" max-w-md mx-32 mt-12 bg-white rounded-lg border shadow-md dark:bg-gray-100 dark:border-gray-200">
@@ -27,6 +27,23 @@ export default function Upload_card() {
             <div className='col-start-9'>
                 <AiOutlineSave size={25} className="hover:cursor-pointer"/> 
             </div>
+        </div>
+        <div className='px-4 py-2'>
+            <img src="/images/test2.jpeg" style={{borderRadius:'100%'}} className="inline-block" width={25}/>
+            <img src="/images/test2.jpeg" style={{borderRadius:'100%'}} className="inline-block" width={25}/>
+            <h5 className='inline-block text-sm ml-2'>Liked by username1 and 3522 others</h5>
+        </div>
+        <div className='px-4 overflow-hidden '>
+            <h3 style={{fontWeight:700,fontSize:12}} className="inline-block truncate">Username</h3>
+            <h6 className='inline-block mx-2 truncate w-[200px]' style={{fontSize:12}}>Description asdasdasd adasdsad gsgdsgsgsd s dsfsdfs fs</h6>
+        </div>
+        <div className='px-4 overflow-hidden '>
+            <h6 className='inline-block text-gray-400  w-[200px] hover:cursor-pointer' style={{fontSize:12}}>View all 70 comments</h6>
+        </div>
+        <div className='px-4 overflow-hidden border-t-2 py-2'>
+            <HiOutlineEmojiHappy size={25} className="inline-block"/>
+            <input type="search" id="default-search" class="inline-block mx-2 p-1 pl-4 w-[300px] text-sm text-gray-900 bg-gray-50 rounded-xl    dark:bg-gray-100 dark:border-gray-200 dark:placeholder-gray-400 dark:text-black dark:focus:ring-gray-500 dark:focus:border-gray-500" placeholder="Add a comment ..." />
+            <button className='text-cyan-300 mx-4 inline-block'>Post</button>
         </div>
     </div>
   )
